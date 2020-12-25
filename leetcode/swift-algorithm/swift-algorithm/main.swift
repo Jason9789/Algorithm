@@ -7,5 +7,22 @@
 
 import Foundation
 
-print("Hello, World!")
+class Solution {
+    func isPalindrome(_ s: String) -> Bool {
+        
+        let lowerString = s.lowercased()
+        let alnumString = lowerString.replacingOccurrences(of: "[^a-z0-9]", with: "", options: .regularExpression)
+        let reversedString = String(alnumString.reversed())
+        
+        return alnumString == reversedString
+        
+    }
+}
+
+//Solution.isPalindrome("A man, a plan, a canal: Panama")
+
+var solution = Solution()
+let sol = solution.isPalindrome("A man, a plan, a canal: Panama")
+
+print(sol)
 
