@@ -7,4 +7,8 @@
 
 import Foundation
 
-print("hll")
+class Solution {
+    func reverseString(_ s: inout [Character]) {
+        s.reverse()
+    }
+}
