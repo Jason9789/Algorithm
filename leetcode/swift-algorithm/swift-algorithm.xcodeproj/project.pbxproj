@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0621B84D2595EFC600C64D84 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621B84C2595EFC600C64D84 /* main.swift */; };
+		0621B8572595F3D200C64D84 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0621B8562595F3D200C64D84 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,8 @@
 
 /* Begin PBXFileReference section */
 		0621B8492595EFC600C64D84 /* swift-algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-algorithm"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0621B84C2595EFC600C64D84 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		0621B84C2595EFC600C64D84 /* 125_valid_palindrome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 125_valid_palindrome.swift; sourceTree = "<group>"; };
+		0621B8562595F3D200C64D84 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +58,8 @@
 		0621B84B2595EFC600C64D84 /* swift-algorithm */ = {
 			isa = PBXGroup;
 			children = (
-				0621B84C2595EFC600C64D84 /* main.swift */,
+				0621B84C2595EFC600C64D84 /* 125_valid_palindrome.swift */,
+				0621B8562595F3D200C64D84 /* main.swift */,
 			);
 			path = "swift-algorithm";
 			sourceTree = "<group>";
@@ -93,6 +95,7 @@
 				TargetAttributes = {
 					0621B8482595EFC600C64D84 = {
 						CreatedOnToolsVersion = 12.2;
+						LastSwiftMigration = 1220;
 					};
 				};
 			};
@@ -119,7 +122,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0621B84D2595EFC600C64D84 /* main.swift in Sources */,
+				0621B8572595F3D200C64D84 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,10 +247,18 @@
 		0621B8512595EFC600C64D84 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKSNRHW63A;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-algorithm/swift-algorithm-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -255,10 +266,17 @@
 		0621B8522595EFC600C64D84 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RKSNRHW63A;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-algorithm/swift-algorithm-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
