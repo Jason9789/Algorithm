@@ -23,6 +23,7 @@
 		0621B8672596E8EF00C64D84 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		0621B8702596EDBE00C64D84 /* LinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 		063AEE4A25984B33000A67D8 /* Stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stack.swift; sourceTree = "<group>"; };
+		063AEE4F259850F0000A67D8 /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 				0621B8672596E8EF00C64D84 /* Node.swift */,
 				0621B8702596EDBE00C64D84 /* LinkedList.swift */,
 				063AEE4A25984B33000A67D8 /* Stack.swift */,
+				063AEE4F259850F0000A67D8 /* Queue.swift */,
 			);
 			path = "swift-Data-Structures";
 			sourceTree = "<group>";
