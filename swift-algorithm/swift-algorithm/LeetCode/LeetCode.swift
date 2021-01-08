@@ -7,5 +7,4 @@
 
 import Foundation
 
-print("BOJ, World!")
-
+print("Hello LeetCode")
