@@ -7,4 +7,6 @@
 
 import Foundation
 
-print("HI")
+while let input = readLine() {
+    print(input.split(separator: " ").map{ Int($0)! }.reduce(0, +))
+}
