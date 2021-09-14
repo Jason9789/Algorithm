@@ -11,7 +11,7 @@ def binarySearch(A, item, left, right):
         mid = (left + right) // 2
         if item == A[mid]:
             flag = True
-            return mid
+            return A[mid]
         elif item < A[mid]:
             return binarySearch(A, item, left, mid-1)
         else:
