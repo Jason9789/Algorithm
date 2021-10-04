@@ -21,18 +21,18 @@ roads.sort(key=lambda x: x[1])
 
 heap = []
 
-for road in roads:
-    if not heap:
-        heapq.heappush(heap, road)
-
-    else:
-        while heap[0][0] < road[1] - d:
-            heapq.heappop(heap)
-
-            if not heap:
-                break
-        heapq.heappush(heap, road)
-
-    result = max(result, len(heap))
-
-print(result)
+# for road in roads:
+#     if not heap:
+#         heapq.heappush(heap, road)
+#
+#     else:
+#         while heap[0][0] < road[1] - d:
+#             heapq.heappop(heap)
+#
+#             if not heap:
+#                 break
+#         heapq.heappush(heap, road)
+#
+#     result = max(result, len(heap))
+#
+# print(result)
