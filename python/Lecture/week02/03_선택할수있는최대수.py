@@ -116,8 +116,7 @@ while start <= len_list-1:
     else:
         result = max(result, cnt)
         start += 1
-        end = start
-        cnt = 0
+        cnt -= 1
 
 print(result)
 
