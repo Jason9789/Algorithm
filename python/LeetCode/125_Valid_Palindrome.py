@@ -1,7 +1,7 @@
 import re
 
 
-class Solusion:
+class Solution:
     def isPalindrome(self, s: str) -> bool:
         s = s.lower()
 
@@ -11,7 +11,7 @@ class Solusion:
 
 
 # Input
-S = Solusion()
+S = Solution()
 
 input = input()
 S.isPalindrome(input)
