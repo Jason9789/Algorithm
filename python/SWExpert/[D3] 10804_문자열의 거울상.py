@@ -1,9 +1,9 @@
-# mirror = {
-#     'b': 'p',
-#     'd': 'q',
-#     'q': 'd',
-#     'p': 'b'
-# }
+mirror = {
+    'b': 'd',
+    'd': 'b',
+    'q': 'p',
+    'p': 'q'
+}
 
 T = int(input())
 
@@ -12,6 +12,6 @@ for tc in range(1, T+1):
     result = ""
 
     for i in case:
-        result += i
+        result += mirror[i]
 
     print(f'#{tc} {result[::-1]}')
