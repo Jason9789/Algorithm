@@ -1,4 +1,5 @@
 import heapq
+import math
 from pprint import pprint
 
 data = [
@@ -36,3 +37,12 @@ for i in range(3):
 # pprint -> 복잡한 구조를 지닌 json 데이터를 디버깅 용도로 출력할 때 자주 사용
 print("\npprint")
 pprint(data)
+
+
+# math 라이브러리
+
+print(math.factorial(5))
+print(math.sqrt(6))
+print(math.gcd(35, 14))
+print(math.pi)
+print(math.e)
