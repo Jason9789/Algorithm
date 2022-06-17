@@ -60,6 +60,90 @@
 
 ---
 
+## 최대값 최솟값 정의
+
+```python
+import sys
+
+max_value = sys.maxsize
+min_value = sys.minsize
+
+max_value = float('inf')
+min_value = float('int')
+
+```
+
+<br>
+<br>
+
+---
+
+## 리스트에서 index, value를 함께 출력
+
+```python
+for i, v in enumerate(list):
+  print(i, v)
+```
+
+<br>
+<br>
+
+---
+
+## 딕셔너리
+
+```python
+a = dict()
+
+a = {}
+```
+
+위와 같이 표현할 수 있다. 또한 다음과 같이 선언 가능하다
+
+```python
+a = {'key1': 'value1', 'key2': 'value2'}
+print(a) # {'key1': 'value1', 'key2': 'value2'}
+
+a['key3'] = 'value3'
+print(a) # {'key1': 'value1', 'key2': 'value2', 'key3': 'value3' }
+
+a['key1'] # 'value1'
+```
+
+단, `dict()` 혹은 `{}`로 선언한 **딕셔너리**는 리스트에서 존재하지 않는 인덱스를 조회활 경우 `IndexError`가 발생한다.
+
+`try` 구문 혹은 `if` 문으로 예외 처리가 가능하다
+
+```python
+try:
+  print(a['key4'])
+except KeyError:
+  print('존재하지 않는 키')
+
+if 'key4' in a:
+  print('존재')
+else:
+  print('존재 하지 않음')
+```
+
+### 딕셔너리 모듈
+
+`defaultdict` 객체를 사용하게 되면 예외처리를 하지 않아도 된다.
+
+즉, 존재하지 않는 키를 조회할 경우, 에러 메시지를 출력하는 대신 디폴트 값을 기준으로 해딩 카에 대한 딕셔너리 아이템을 생성해준다.
+
+```python
+a = collections.defaultdict(int)
+a['A'] = 5
+a['B'] = 4
+print(a) # defaultdict(<class 'int'>, {'A': 5, 'B': 4})
+```
+
+<br>
+<br>
+
+---
+
 ## 자주 쓰이는 리스트 관련 함수
 
 - `append()` : 원소 삽입 `O(1)`
